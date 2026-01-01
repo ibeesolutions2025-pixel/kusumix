@@ -1,0 +1,7 @@
+{
+  "name": "RapStudio AI - Kỹ sư Mixing Chuyên nghiệp",
+  "description": "Ứng dụng hỗ trợ phân tích và đề xuất quy trình mixing/mastering chuyên nghiệp cho nhạc Rap/Hip-hop dựa trên công nghệ Gemini AI.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
