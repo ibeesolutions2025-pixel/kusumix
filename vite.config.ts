@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      // Đã thêm đường dẫn dự án kusumix vào đây
+      base: '/kusumix/', 
+      
       server: {
         port: 3000,
         host: '0.0.0.0',
@@ -16,8 +19,14 @@ export default defineConfig(({ mode }) => {
       },
       resolve: {
         alias: {
+          // Trỏ alias về thư mục hiện tại
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      build: {
+        outDir: 'dist',
+        // Đảm bảo assets được build đúng cấu trúc thư mục
+        assetsDir: 'assets',
       }
     };
 });
